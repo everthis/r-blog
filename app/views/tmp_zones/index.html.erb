@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tmp zones</h1>
+
+<div id="tmp_zones">
+  <% @tmp_zones.each do |tmp_zone| %>
+    <%= render tmp_zone %>
+    <p>
+      <%= link_to "Show this tmp zone", tmp_zone %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tmp zone", new_tmp_zone_path %>

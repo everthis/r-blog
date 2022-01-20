@@ -1,0 +1,22 @@
+<%= form_with(model: tmp_zone) do |form| %>
+  <% if tmp_zone.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tmp_zone.errors.count, "error") %> prohibited this tmp_zone from being saved:</h2>
+
+      <ul>
+        <% tmp_zone.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

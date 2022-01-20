@@ -1,0 +1,2 @@
+class TmpZone < ApplicationRecord
+end

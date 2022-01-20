@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tmp_zone %>
+
+<div>
+  <%= link_to "Edit this tmp zone", edit_tmp_zone_path(@tmp_zone) %> |
+  <%= link_to "Back to tmp zones", tmp_zones_path %>
+
+  <%= button_to "Destroy this tmp zone", @tmp_zone, method: :delete %>
+</div>
